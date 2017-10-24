@@ -1,82 +1,35 @@
-/* styles */
-/* called by your view template */
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Roboto');
 
-/* You might want to try something fancier: */
-/* less: http://lesscss.org/ */
 
-* {
-  box-sizing: border-box;
+#wrapper {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  color: #222;
 }
 
-body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 25px;
+.title {
+  font-family: "Fugaz One";
+  margin-bottom: 0px;
 }
 
-h1 {
-  font-weight: bold;
-  color: pink;
+header {
+  font-size: 2rem;
 }
 
-.bold {
-  font-weight: bold;
+.subtitle {
+  margin-top: -10px;
 }
 
-p {
-  max-width: 600px;
-}
-
-form {
-  margin-bottom: 25px;
-  padding: 15px;
-  background-color: cyan;
-  display: inline-block;
-  width: 100%;
-  max-width: 340px;
-  border-radius: 3px;
-}
-
-input {
-  display: block;
-  margin-bottom: 10px;
-  padding: 5px;
-  width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-  font-size: 16px;
-}
-
-button {
-  font-size: 16px;
-  border-radius: 3px;
-  background-color: lightgrey;
-  border: 1px solid grey;
-  box-shadow: 2px 2px teal;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: yellow;
-}
-
-button:active {
-  box-shadow: none;
-}
-
-li {
-  margin-bottom: 5px;
-}
-
-footer {
-  margin-top: 50px;
-  padding-top: 25px;
-  border-top: 1px solid lightgrey;
-}
-
-footer > a {
-  color: #BBBBBB;
-}
-
-.nicejob {
-  text-decoration: line-through;
+pre {
+  text-align: left;
+  padding: 0;
+  margin-left: -100px;
+  overflow-y: scroll;
+  width: 100vw;
 }

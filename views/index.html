@@ -19,36 +19,36 @@
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <header>
-      <h1>
-        URL Shorteniser!
+    <div id="wrapper">
+      <header>
+      <h1 class="title">
+        Shorty URL
       </h1>
-      <p>
-        or in all likelyhood.. longifier..
-      </p>
+      <span class="subtitle"><small><em>Minify your long-ass URLs!</em></small></span>
     </header>
     <div>
       <p>
         Instructions:
       </p>
       <p>
-        Example input
+        Place the URL you would like to shorten after a slash at the end of this site's URL, like so...
       </p>
       <code>https://curse-forger.glitch.me/https://google.com</code>
       <p>
-        Output
+        You'll recieve this JSON formatted document. The value associated with the "shortened_url" key is your new link!
       </p>
       <p>
-        You will recieve a json object of the form 
-        <code>
+        <pre>
               {
                 "original_url": "https://google.com",
                 "shortened_url": "https://curse-forger.glitch.me/9453564"
               }
-        </code>
+        </pre>
       </p>
     </div>
-
+    
+    </div>
+    
     <!-- Your web-app is https, so your scripts need to be too -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
